@@ -71,6 +71,19 @@ php artisan serve
 ```
 L’application sera accessible sur `http://127.0.0.1:8000`.
 
+## Guide utilisateur
+### 1. Agent DGE
+Pour accéder à la plateforme destinée à l'Agent DGE il faut taper l'adresse : http://localhost:8000/login/dge et ensuite procéder à l'authentification
+Il peut créer un candidat, le modifier, le supprimer. Il doit crypter le fichier électorale, ensuite renseigner le checksum et enfin pouvoir téléverser ce fichier.
+Il doit aussi renseigner la date d'ouverture et de fermeture des parrainages.
+
+### 2. Electeur
+Arrivé à la page d'accueil il clique sur le bouton rejoindre la plateforme pour s'inscrire. Il faut impérativement que les informations qu'il renseigne sur cette page d'inscription soit conforme avec les informations présents dans le fichier électorale. Après inscription un code de validation lui est envoyé par mail.Après vérification du code son compte est créé avec succés. Il pourra ainsi parrainer le candidat de son choix.
+
+### 3. Candidat
+Pour accéder à son espace candidat, il clique sur le bouton ''vous etes un candidat'' pour se connecter. Il recevra ces informations de connection par mail quand l'Agent DGE aura créé son compte. Il pourra visualiser l'avancement de ses parrainages et de ceux de ses concurrents.
+
+
 ## Support
 Si vous rencontrez des problèmes, consultez la documentation Laravel ou ouvrez un ticket sur GitHub.
 
